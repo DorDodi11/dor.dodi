@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div  class="container">
+      <h3>Sign up Here!</h3>
+      <form action="#" id="signup-form">
+        <label for="name">Full name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" />
+        <label for="pid">ID number</label>
+        <input type="text" id="pid" name="pid" placeholder="9 digit format" />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="exemple@gmail.com"/>
+        <label for="Password1">Password:</label>
+        <input type="password1" id="Password1" name="pwd" />
+        <label for="Password2">Re-enter password:</label>
+        <input type="password2" id="Password2" name="pwd" />
+        <input id="submit-signup" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div id="contact" class="container">
+      <h3>Contact us!</h3>
+      <form action="#" >
+        <div id="contact-form">
+          <div class="details">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+  
+          <div class="free-text">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." 
+            style="height: 150px"></textarea>
+          </div>
+        </div>
+        <div id="submit-form">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

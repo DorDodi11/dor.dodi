@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#submit-signup{
+  margin-top: 15px;
+}
+
+#contact-form {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+}
+
+.free-text {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#submit-form > input {
+  width: 100%;
+  color: red;
+}
