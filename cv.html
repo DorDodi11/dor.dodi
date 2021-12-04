@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="en">
+0
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="cv.css">
+
+        <script src="cv.js"></script>
+
+        <title>cv</title>
+
+    </head>
+
+    
+    
+    
+    <body>
+
+        <header>האתר של דור</header>
+
+        <div class="flex">
+
+            <aside>תפריט</aside>
+
+            <main>
+                <div id="anim"></div>
+            </main>
+
+        </div>
+
+        
+        
+                <div>
+                    <h2>עמוד צור קשר</h2>
+                    <label for="firstname">שם פרטי:</label> 
+                    <input id="firstname" type="text" required aria-multiline="false" minlength="0" maxlength="10" >
+
+                    <button onclick="myFunction()">submit</button>
+                    <p id="demo1"></p>
+                    <script>
+                    function myFunction() {
+                    const inpObj1 = document.getElementById("firstname");
+                    if (!inpObj1.checkValidity()) {
+                    document.getElementById("demo1").innerHTML = inpObj.validationMessage;
+                    } else {
+                    document.getElementById("demo1").innerHTML = "Input OK";
+                    }
+                    }
+                    </script>
+                </div>
+                <div>
+                    <label for="lastname">שם משפחה:</label>
+                    <input id="lastname" type="text" required aria-multiline="false" minlength="0" maxlength="10" >
+
+                    <button onclick="myFunction1()">submit</button>
+                    <p id="demo2"></p>
+                    <script>
+                    function myFunction1() {
+                    const inpObj2 = document.getElementById("lastname");
+                    if (!inpObj2.checkValidity()) {
+                    document.getElementById("demo2").innerHTML = inpObj.validationMessage;
+                    } else {
+                    document.getElementById("demo2").innerHTML = "Input OK";
+                    }
+                    }
+                    </script>
+                </div>
+                <div>
+                    <label for="email">מייל:</label>
+                    <input id="email" type="email" required >
+
+                    <button onclick="myFunction2()">submit</button>
+                    <p id="demo3"></p>
+                    <script>
+                    function myFunction2() {
+                    const inpObj3 = document.getElementById("email");
+                    if (!inpObj3.checkValidity()) {
+                    document.getElementById("demo3").innerHTML = inpObj.validationMessage;
+                    } else {
+                    document.getElementById("demo3").innerHTML = "Input OK";
+                    }
+                    }
+                    </script>
+                </div>
+
+    </body>
+            
+    <footer>
+         פרטים נוספים:
+    </footer>
+
+</html>
+
+
+
+
+ <!-- <body>
+    <h2>JavaScript Validation</h2>
+    <p>Enter a number and click OK:</p>
+    <input id="id1" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+    <p>If the number is less than 100 or greater than 300, an error message
+    will be displayed.</p>
+    <p id="demo"></p>
+    <script>
+    function myFunction() {
+    const inpObj = document.getElementById("id1");
+    if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    } else {
+    alert("efc")
+    }
+    }
+    </script>
+    </body> 
+
+
+    
+    
+    
+    <div id="error"></div>
+                <form id = form action="/" method="GET">
+                    <div>
+                        <h1>Contact Validation</h1>
+                    </div>
+                    <div>
+                        <label for="firstname"><b>שם פרטי:</b></label>
+                        <input id="firstname" name="name" type="text"><br>
+                    </div>
+                        <label for="lastname"><b>שם משפחה:</b></label>
+                        <input id="lastname" name="lastname" type="text"><br>
+                    <div>
+                        <label for="email"><b>אימייל:</b></label>
+                        <input id="email" name="email" type="email"><br> 
+                    </div>
+                        <button onclick="myFunction()">צור קשר</button>
+                </form>   
+            </div>        
+
+
+
+
+            <p id="demo"></p>
+                    <script>
+                        function myFunction() {
+                        let text = document.getElementById("firstname");
+                        // const inpObj2 = document.getElementById("lastname");
+                        // const inpObj3 = document.getElementById("email");
+                        
+                        if ((!text.checkValidity())) {
+                        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+                        } else {
+                        document.getElementById("demo").innerHTML = "Input OK";
+                        }
+                        //else{
+                        //    alert(false)
+                        //  }
+                        }
+                    </script>
